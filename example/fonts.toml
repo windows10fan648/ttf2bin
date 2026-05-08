@@ -1,0 +1,42 @@
+# Font system manifest for ttf2bin
+# Run: ttf2bin system --manifest example/fonts.toml --output example/system.fntpkg
+
+[system]
+name    = "MyOS Font System"
+version = "1.0.0"
+
+# ── Family: Sans ─────────────────────────────────────────────────────────
+[[family]]
+name = "Sans"
+
+  [[family.face]]
+  style = "Regular"
+  ttf   = "fonts/Sans-Regular.ttf"
+  sizes = [12, 16, 24]
+  first = 32
+  last  = 126
+
+  [[family.face]]
+  style = "Bold"
+  ttf   = "fonts/Sans-Bold.ttf"
+  sizes = [12, 16, 24]
+  first = 32
+  last  = 126
+
+  [[family.face]]
+  style = "Italic"
+  ttf   = "fonts/Sans-Italic.ttf"
+  sizes = [16]
+  first = 32
+  last  = 126
+
+# ── Family: Mono ─────────────────────────────────────────────────────────
+[[family]]
+name = "Mono"
+
+  [[family.face]]
+  style = "Regular"
+  ttf   = "fonts/Mono-Regular.ttf"
+  sizes = [12, 14, 16]
+  first = 32
+  last  = 126
